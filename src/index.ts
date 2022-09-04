@@ -8,3 +8,5 @@ export * from "./models/PendingBusinessUser";
 export * from "./models/PendingCardIssuerUser";
 export * from "./models/Transaction";
 export * from "./models/User";
+
+export * from "./misc";
