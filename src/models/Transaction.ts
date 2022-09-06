@@ -14,5 +14,6 @@ export interface TransactionDocument extends Document {
   userId: ObjectId | UserDocument;
   cardIssuerId: ObjectId | CardIssuerDocument;
   amountInDollars: number;
+  mcc: string;
   merchant: Merchant;
 }
