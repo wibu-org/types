@@ -17,5 +17,5 @@ export interface OfferDocument extends Document {
   categoryType: merchantCategoryCodeEnum;
   merchantName: string | null;
   acceptorId: string | null;
-  transactionWithMeCondition: transactionWithMeConditionEnum;
+  madeTransactionWithMeCondition: transactionWithMeConditionEnum;
 }
