@@ -3,6 +3,12 @@ import { Document } from "mongoose";
 import { merchantCategoryCodeEnum } from "../misc";
 import { BusinessDocument } from "./Business";
 
+export enum transactionWithMeConditionEnum {
+  NeverBefore = "NEVER_BEFORE",
+  AtLeastOnceBefore = "AT_LEAST_ONCE_BEFORE",
+  DoesNotMatter = "DOES_NOT_MATTER",
+}
+
 export interface OfferDocument extends Document {
   isActive: boolean;
   cashBackPercentage: number;
@@ -11,5 +17,5 @@ export interface OfferDocument extends Document {
   categoryType: merchantCategoryCodeEnum;
   merchantName: string | null;
   acceptorId: string | null;
-  madeTransactionWithMeAlready: boolean;
+  transactionWithMeCondition: transactionWithMeConditionEnum;
 }

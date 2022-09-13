@@ -1,6 +1,6 @@
 {
   "name": "wibu-types",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A place to store types/interfaces that are shared across the frontend and backend.",
   "main": "index.js",
   "types": "index.d.ts",
