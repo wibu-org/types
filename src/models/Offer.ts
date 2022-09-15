@@ -12,7 +12,7 @@ export enum transactionWithMeConditionEnum {
 export type CleanedOffer = {
   id: string;
   categoryType: merchantCategoryCodeEnum;
-  expirationDate: Date;
+  expirationDate: Date | null;
   cashBackPercentage: number;
   businessName: string;
   businessMerchantName: string;
