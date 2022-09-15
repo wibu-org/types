@@ -9,6 +9,15 @@ export enum transactionWithMeConditionEnum {
   DoesNotMatter = "DOES_NOT_MATTER",
 }
 
+export type CleanedOffer = {
+  id: string;
+  categoryType: merchantCategoryCodeEnum;
+  expirationDate: Date;
+  cashBackPercentage: number;
+  businessName: string;
+  businessMerchantName: string;
+};
+
 export interface OfferDocument extends Document {
   isActive: boolean;
   cashBackPercentage: number;
